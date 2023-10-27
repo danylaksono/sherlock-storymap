@@ -223,7 +223,8 @@ var geojson = [
     "properties": { "id": "charing-cross" } }
 ];
 var tiles = mapbox.layer().tilejson({
-  tiles: [ "https://a.tiles.mapbox.com/v3/examples.map-liczq28b/{z}/{x}/{y}.png" ]
+  // tiles: [ "https://a.tiles.mapbox.com/v3/examples.map-liczq28b/{z}/{x}/{y}.png" ]
+  tiles: [ "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" ]
 });
 
 // Use https for markers
