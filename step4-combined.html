@@ -160,7 +160,8 @@ body.section-0 #map { opacity:0.5; }
     <small class='colophon'>
       Adapted from <a href='http://www.gutenberg.org/files/2346/2346-h/2346-h.htm'>Project Gutenberg</a><br/>
       Map data &copy; <a href='http://openstreetmap.org/copyright'>OpenStreetMap Contributors</a><br/>
-      Map design &copy; <a href='http://mapbox.com/about/maps/'>MapBox</a>
+      Map design &copy; <a href='http://mapbox.com/about/maps/'>MapBox</a><br/>
+Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>. Hosted by <a href="https://stadiamaps.com/">Stadia Maps</a>.<br/>
     </small>
   </section>
 </article>
@@ -187,7 +188,7 @@ var geojson = [
     "properties": { "id": "charing-cross" } }
 ];
 var tiles = mapbox.layer().tilejson({
-  tiles: [ "http://a.tiles.mapbox.com/v3/examples.map-liczq28b/{z}/{x}/{y}.png" ]
+  tiles: [ "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png" ]
 });
 var spots = mapbox.markers.layer()
   // Load up markers from geojson data.

@@ -45,7 +45,7 @@ var geojson = [
     "properties": { "title": "Charing Cross Station" } },
 ];
 var tiles = mapbox.layer().tilejson({
-  tiles: [ "http://a.tiles.mapbox.com/v3/examples.map-6m5zwq0h/{z}/{x}/{y}.png" ]
+  tiles: [ "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png" ]
 });
 var spots = mapbox.markers.layer()
   // Load up markers from geojson data.
@@ -61,5 +61,6 @@ var map = mapbox
 mapbox.markers.interaction(spots);
 </script>
 
+<div style="position: absolute; bottom: 10px; left: 10px; background: rgba(255,255,255,0.7); padding: 5px; font-size: 10px;">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>. Hosted by <a href="https://stadiamaps.com/">Stadia Maps</a>.</div>
 </body>
 </html>
